@@ -53,7 +53,7 @@ try:
    connection.commit()
    
    #insertion of data
-   insert_data = """ copy landmarks(name,address,date_built,architect,landmark,latitude,longitude) FROM 'D:/Roopesh/system_integration/project/Individual_Landmarks.csv' DELIMITERS ',' CSV HEADER """
+   insert_data = """ copy landmarks(name,address,date_built,architect,landmark,latitude,longitude) FROM 'Individual_Landmarks.csv' DELIMITERS ',' CSV HEADER """
    cursor.execute(insert_data)
    connection.commit()
 
